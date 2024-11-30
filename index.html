@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bri Cook Designs</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Bri Cook Designs</div>
+        <ul>
+            <li><a href="#home" class="scroll-link" data-target="home">Home</a></li>
+            <li><a href="#projects" class="scroll-link" data-target="projects">Projects</a></li>
+            <li><a href="#contact" class="scroll-link" data-target="contact">Contact</a></li>
+            <li><a href="https://docs.google.com/document/d/1YwGXJhGci8oKytpwOEE7FHj62vkcWIPXNEpUGx2yPZw/edit?usp=sharing" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero fade-in full-height">
+        <div class="hero-content">
+            <div class="hero-image-container">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQH1PjYSYyjwyg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1645316399579?e=1738195200&v=beta&t=AJGaROSL4wm9QUCc0Ig_-RWqC4NotXsiAIHNEjLYcwM" alt="Photo of Brianna" class="hero-image">
+            </div>
+            <div class="hero-text">
+                <h1>Creating Thoughtful Designs</h1>
+                <p>Welcome to my portfolio! I specialize in UX/UI and front-end development, combining creativity and functionality to deliver impactful digital experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="icebreakers-section">
+        <div class="icebreakers-container">
+            <div class="icebreakers-text">
+                <h2 class="icebreakers-header">Ice Breakers</h2>
+                <!-- Add other text/content if needed -->
+            </div>
+            <div class="ice-animation-container">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player src="https://lottie.host/01f38c96-ab7c-4400-9ab0-89bfa60ad146/tdzbNyB0sC.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>            </div>
+        </div>
+
+        
+    </section>
+
+    <section class="card-section">
+        <div class="card-container">
+            <div class="card">
+                <h3>Skills</h3>
+                <p>a short glimpse into my design experience</p>
+                <ul class="project-list">
+                    <li>• Figma Expert - and love a good Figjam!</li>
+                    <br>
+                    <li>• Skilled in multiple design/dev tools like Github, Visual Studio, Adobe products, Invision
+                    + Adaptable to new systems</li>
+                    <br>
+                    <li>• Basic Knowledge in HTML, CSS, and JavaScript | experience working with JSON, jQuery, MongoDB, and Node.js.</li>
+                    <br>
+                    <li>•Confident in using UX/UI Research/Design procress to create user friendly engaging designs. </li>
+                    </ul>
+                <a href="javascript:void(0);" class="cta-button" onclick="toggleCard(this)">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Hobbies</h3>
+                <p>what brings me joy outside of work & school</p>
+                <ul class="project-list">
+                    <li>• Backpacing</li>
+                    <br>
+                    <li>• Visiting National Parks</li>
+                    <br>
+                    <li>• Sculpting</li>
+                    <br>
+                    <li>• Painting</li>
+                    <br>
+                    <li>• Home brewed Kombucha</li>
+                    <br>
+                </ul>
+                <a href="javascript:void(0);" class="cta-button" onclick="toggleCard(this)">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Fun Facts</h3>
+                <p>little things about me you might not guess</p>
+                <ul class="project-list">
+                    <li>• I thru hiked 500 miles across Colorado!</li>
+                    <br>
+                    <li>• My favorite color is yellow</li>
+                    <br>
+                    <li>• I rescued a stray cat this year, her name is feta!</li>
+                    <br>
+                    <li>• I circumnavigated Mount Saint Helens in Washington in 2 days</li>
+                    <br>
+                </ul>
+                <a href="javascript:void(0);" class="cta-button" onclick="toggleCard(this)">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+    <section>
+        <marquee class="scrolling-text" width="60%" direction="left" height="100px">
+            Prototyping • Prototyping • User Research & Testing • Git/Github • Visual Design & Branding • Interactive Design • FIGMA • Adobe XD • InVision • Photoshop & Illustrator • Wordpress • HTML • CSS • JAVASCRIPT • JIRA • Team Player • Creative Problem Solver • Open to change and feedback • Time Management
+        </marquee>
+    </section>
+      
+    <section id="projects" class="recent-work fade-in full-height">
+        <h2>My Recent Work</h2>
+        <div class="projects">
+            <a href="https://www.behance.net/gallery/213085951/Custom-Website-Design-UX-UI-FRONT-END-Salty-Ceramics" class="project" target="_blank">
+                <div class="project-thumbnail">
+                    <iframe src="https://www.behance.net/embed/project/213085951?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <p>"Salty Ceramics"</p>
+                <p>Real Client: Custom Website</p>
+                <p>(Work in Progress)</p>
+            </a>
+            <a href="https://www.behance.net/gallery/182156653/The-Center-Orlando" class="project" target="_blank" rel="noopener noreferrer">
+                <div class="project-thumbnail">
+                    <iframe src="https://www.behance.net/embed/project/182156653?ilo0=1" class="dribbble-thumbnail" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <p>"The Center Orlando"</p>
+                <p>Group UX/UI Project for a Non Profit Organization</p>
+            </a>
+
+            <a href="https://www.behance.net/gallery/213606731/Sunshine-Yoga-Fictional-Yoga-Studio-Design" class="project" target="_blank">
+                <div class="project-thumbnail">
+                    <iframe src="https://www.behance.net/embed/project/213606731?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <p>Project 3: UX Design</p>
+                <p>High fidelity wireframe for a fictional Yoga Studio </p>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="footer fade-in full-height">
+        <h2>Let's Connect!</h2>
+        <p>Email: bricookdesigns@gmail.com</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/cook-brianna/" target="_blank" class="linkedin-link">LinkedIn</a></p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/cook-brianna/" target="_blank" class="social-icon">
+                <img src="images/linkedin.png" alt="LinkedIn" class="social-icon-img">
+            </a>
+            <a href="https://www.behance.net/briannacook7" target="_blank" class="social-icon">
+                <img src="images/behance.png" alt="Behance" class="social-icon-img">
+            </a>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

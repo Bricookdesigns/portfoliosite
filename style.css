@@ -1,0 +1,457 @@
+/* General Reset */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2E2E2E; /* Dark Gray */
+    background-color: #F7F6EB; /* Linen */
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1, h2, h3 {
+    font-family: 'Abril Fatface', serif;
+    color: #382020; /* Chocolate */
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #FF855A; /* Papaya */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.5rem;
+    color: #FFF4C5; /* Banana Cream */
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #FFF4C5; /* Banana Cream */
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #F7F6EB; /* Linen on hover */
+    border-bottom: 2px dotted #F7F6EB;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #F7F6EB; /* Linen */
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image-container {
+    flex-shrink: 0;
+    border: 5px solid #A5B7E5; /* Sky Border */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.hero-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 3rem;
+    color: #FF855A; /* Papaya */
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    color: #2E2E2E; /* Dark Gray */
+}
+
+/* Recent Work Section */
+.recent-work {
+    padding: 2rem;
+    background-color: #D1D175; /* Saguaro */
+    text-align: center;
+}
+
+.recent-work h2 {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project {
+    text-decoration: none;
+    color: #2E2E2E; /* Dark Gray */
+    background-color: #FFF4C5; /* Banana Cream */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 300px; /* Consistent width for projects */
+    text-align: center;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-thumbnail {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.project-thumbnail iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer Section */
+.footer {
+    padding: 2rem;
+    background-color: #382020; /* Chocolate */
+    color: #FFF4C5; /* Banana Cream */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align text and icons */
+    gap: 1rem;
+}
+
+.footer h1 {
+    font-size: 2.5rem;
+    font-family: 'Abril Fatface', serif;
+    color: #FFF4C5; /* Banana Cream */
+    margin-bottom: 1rem;
+}
+
+.footer h2 {
+    font-size: 1.8rem;
+    font-family: 'Abril Fatface', serif;
+    color: #FFF4C5; /* Match footer text color */
+}
+
+.footer .about-me {
+    text-align: center;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer .social-icons img {
+    width: 32px; /* Icon size */
+    height: 32px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer .social-icons img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Link Colors */
+.projects a {
+    color: #2E2E2E; /* Dark Gray for project links */
+}
+
+.projects a:hover {
+    color: #382020; /* Slightly darker on hover */
+    text-decoration: underline;
+}
+
+.footer a {
+    color: #FFF4C5; /* Banana Cream for footer links */
+}
+
+.footer a:hover {
+    color: #F7F6EB; /* Lighter linen on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Fade-in Effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Styling for the marquee */
+.scrolling-text {
+    background-color: #A5B7E5; /* Sky Border */
+    color: #FFF4C5; /* Banana yellow */
+    font-size: 4rem;
+    font-family: 'Abril Fatface', serif;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 80px; /* Below navbar */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Icebreakers Section */
+.icebreakers-section {
+    padding: 2rem;
+    background-color: #F7F6EB; /* Match the website's overall color palette */
+    text-align: center;
+    margin-top: 4rem; /* Ensure it's separated from the section above it */
+}
+
+/* Container for both text and animation */
+.icebreakers-container {
+    display: flex;
+    justify-content: center; /* Center the entire content horizontally */
+    align-items: center;     /* Center content vertically */
+    width: 100%;
+}
+
+/* Style for the text part */
+.icebreakers-text {
+    flex-shrink: 0; /* Prevent the text from shrinking */
+    text-align: left; /* Align the text to the left */
+    padding-left: 10vw; /* Add space on the left of the text */
+    padding-right: 2rem; /* Optional: add some padding to the right for spacing */
+}
+
+/* Ice Breaker header text */
+.icebreakers-header {
+    font-family: 'Abril Fatface', serif;
+    font-size: 4rem; /* Keep text size large */
+    color: #FF855A; /* Papaya */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the animation part */
+.ice-animation-container {
+    flex-shrink: 0; /* Prevent the animation container from shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10vw; /* Add space to the right of the animation */
+}
+
+/* Animation visual */
+.ice-animation {
+    width: 300px; /* Default size of animation */
+    height: 300px; /* Match the width */
+    background: linear-gradient(135deg, #A5B7E5, #FF855A); /* Example visual */
+    border-radius: 50%; /* Circular animation */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .icebreakers-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        gap: 20px;
+    }
+
+    .ice-animation {
+        width: 150px;  /* Set a smaller size for the ice animation */
+        height: 150px; /* Maintain the same proportion */
+        transform: scale(0.5);  /* Scale down the animation */
+    }
+
+    .icebreakers-header {
+        font-size: 2rem; /* Smaller text on mobile */
+    }
+}
+
+
+/* Remove margin or padding from the icebreaker and animation section */
+.icebreaker-section,
+.animation-section {
+   margin: 0;         /* Reset any margin */
+   padding: 0;        /* Reset any padding */
+   overflow: hidden;  /* Prevents unwanted scrollbars */
+}
+
+/* Card Section */
+.card-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for cards */
+    max-height: 300px; /* Initial card height */
+    transition: max-height 0.5s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Card image */
+.card img {
+    width: 100%;
+    height: 150px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Card Text */
+.card h3 {
+    color: #D1D175;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Unordered list (hidden initially) */
+.project-list {
+    font-size: smaller;
+    display: none; /* Start hidden */
+    opacity: 0; /* Fully transparent initially */
+    height: 0; /* Start with zero height */
+    overflow: hidden; /* Hide overflow content */
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 10px;
+    transition: opacity 0.5s ease, height 0.5s ease; /* Smooth fade and expansion */
+}
+
+/* When the card is expanded */
+.card.expanded {
+    max-height: 500px; /* Expanded height */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow when expanded */
+}
+
+/* Button style */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A5B7E5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: auto;
+}
+
+.cta-button:hover {
+    background-color: #7c92ca;
+}
+
+/* When the list is revealed, update opacity and height */
+.card.expanded .project-list {
+    display: block; /* Show the list */
+    opacity: 1; /* Fade in */
+    height: auto; /* Let the height adjust automatically */
+}
