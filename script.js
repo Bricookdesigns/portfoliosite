@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
             }
-
         });
     });
 
@@ -64,13 +63,12 @@ function startScrollingMessage(element) {
         } else {
             // Restart the scrolling from the beginning
             scrollAmount = window.innerWidth; // Start from the right side again
-            scroll();
+            requestAnimationFrame(scroll);
         }
     }
     
     scroll(); // Start the scrolling
 }
-
 
 function toggleCard(button) {
     var card = button.closest('.card'); // Find the closest card element
